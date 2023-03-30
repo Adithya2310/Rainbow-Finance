@@ -1,9 +1,16 @@
-import React from "react";
+import React,{useState} from "react";
+import {token} from "../../../declarations/token/";
 
 function Faucet() {
 
-  async function handleClick(event) {
+  const [bonusStatus,setBonusStatus]=useState("Claim");
+  const [disabled,setDisabled]=useState(false);
 
+
+  async function handleClick(event) {
+    setDisabled(true);
+    const status=await token.payOut();
+    setBonusStatus(status);
   }
 
   return (
@@ -14,10 +21,10 @@ function Faucet() {
         </span>
         Faucet
       </h2>
-      <label>Get your free DAngela tokens here! Claim 10,000 DANG coins to your account.</label>
+      <label>Get your free Rainbow tokens here! Claim 10,000 RAIN coins to your account.</label>
       <p className="trade-buttons">
-        <button id="btn-payout" onClick={handleClick}>
-          Gimme gimme
+        <button id="btn-payout" disabled={disabled} onClick={handleClick} value={bonusStatus}>
+          {bonusStatus}
         </button>
       </p>
     </div>
