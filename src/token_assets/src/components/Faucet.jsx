@@ -5,8 +5,12 @@ function Faucet() {
 
   const [bonusStatus,setBonusStatus]=useState("Claim");
   const [disabled,setDisabled]=useState(false);
+  const [ID,setID]=useState("...");
 
-
+  async function getId(){
+     setID("ID: "+await token.getID());
+  }
+  getId();
   async function handleClick(event) {
     setDisabled(true);
     const status=await token.payOut();
@@ -19,7 +23,8 @@ function Faucet() {
         <span role="img" aria-label="tap emoji">
           🚰
         </span>
-        Faucet
+        Faucet 
+        <p className="ID">{ID}</p>
       </h2>
       <label>Get your free Rainbow tokens here! Claim 10,000 RAIN coins to your account.</label>
       <p className="trade-buttons">

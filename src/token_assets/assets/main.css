@@ -179,4 +179,10 @@ html {
     display: table;
     margin: auto;
   }
+
+  p.ID 
+  {
+    font-size: 12pt;
+    text-shadow: 0 0 2px black!important;
+  }
   

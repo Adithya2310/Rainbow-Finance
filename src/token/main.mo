@@ -37,6 +37,10 @@ actor Token{
         return ticker;
     };
 
+    public shared(msg) func getID():async Text{
+        return Principal.toText(msg.caller);
+    };
+
     public shared(msg) func payOut():async Text{
         if(balances.get(msg.caller)==null){
             let result=await transfer(msg.caller,10000);
