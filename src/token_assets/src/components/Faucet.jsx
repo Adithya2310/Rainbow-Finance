@@ -26,7 +26,7 @@ function Faucet() {
         Faucet 
         <p className="ID">{ID}</p>
       </h2>
-      <label>Get your free Rainbow tokens here! Claim 10,000 RAIN coins to your account.</label>
+      <label>Get your free ReinDeer tokens here! Claim 10,000 REIN coins to your account.</label>
       <p className="trade-buttons">
         <button id="btn-payout" disabled={disabled} onClick={handleClick} value={bonusStatus}>
           {bonusStatus}

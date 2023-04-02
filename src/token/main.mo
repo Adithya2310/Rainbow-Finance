@@ -5,7 +5,7 @@ import Iter "mo:base/Iter"
 
 actor Token{
     let owner:Principal=Principal.fromText("4l2dl-lhul4-huo4k-sf7n4-244vd-nncls-xw3fb-65bbx-igpyn-h6pur-qae");
-    let ticker:Text="RAIN";
+    let ticker:Text="REIN";
     var totalSupply:Nat=40000000;
 
     //creating a hashmap for balances

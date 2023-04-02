@@ -5,11 +5,9 @@ function Header() {
     <header>
       <div className="blue window" id="logo">
         <h1>
-          <span role="img" aria-label="tap emoji">
-            💎
-          </span>
-          Rainbow Finance
+          ReinDeer
         </h1>
+        <h3>Claim some Rein tokens</h3>
       </div>
     </header>
   );

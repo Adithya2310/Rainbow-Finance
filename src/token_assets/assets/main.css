@@ -185,4 +185,10 @@ html {
     font-size: 12pt;
     text-shadow: 0 0 2px black!important;
   }
+
+  h3{
+    text-align: center;
+    color:hsl(0, 4%, 84%);
+    font-style: italic;
+  }
   

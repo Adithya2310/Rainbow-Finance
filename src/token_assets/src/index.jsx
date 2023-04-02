@@ -22,6 +22,7 @@ const init = async () => {
   function handleAuthenticated(){
     ReactDOM.render(<App />, document.getElementById("root"));
   } 
+  // ReactDOM.render(<App />, document.getElementById("root"));
 }
 
 init();

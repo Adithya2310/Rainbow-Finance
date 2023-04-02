@@ -1,6 +1,6 @@
 service : {
   balanceOf: (principal) -> (nat) query;
-  getID: () -> (principal);
+  getID: () -> (text);
   getTicker: () -> (text) query;
   payOut: () -> (text);
   transfer: (principal, nat) -> (text);
